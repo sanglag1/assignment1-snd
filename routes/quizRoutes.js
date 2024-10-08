@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getQuizzes, getQuizById, createQuiz, addQuestionToQuiz, deleteQuiz } = require('../controllers/quizController');
+const { getQuizzes, getQuizById, createQuiz, addQuestionToQuiz, deleteQuiz, updateQuiz } = require('../controllers/quizController');
 
 // Route for getting all quizzes
 router.get('/quizzes', getQuizzes);
@@ -16,5 +16,8 @@ router.post('/quizzes/:quizId/question', addQuestionToQuiz);
 
 // Route for deleting a quiz
 router.delete('/quizzes/:quizId', deleteQuiz);
+
+// Route for update a quiz
+router.put('/quizzes/:quizId', updateQuiz);
 
 module.exports = router;
