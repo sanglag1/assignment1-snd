@@ -20,4 +20,8 @@ router.delete('/quizzes/:quizId', deleteQuiz);
 // Route for update a quiz
 router.put('/quizzes/:quizId', updateQuiz);
 
+// Route for update a question
+router.put('/quizzes/:quizId/questions/:questionId', updateQuestion);
+
+
 module.exports = router;
