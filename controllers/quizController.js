@@ -1,5 +1,3 @@
-const { Quiz, Question } = require('../models/Quiz');
-
 // Get all quizzes
 exports.getQuizzes = async (req, res) => {
   try {
